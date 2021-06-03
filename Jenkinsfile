@@ -20,7 +20,7 @@
         stage('upload Artifacts') {
             steps {
                 sh '''
-           curl -f -v -u admin:admin123 --upload-file login.zip http://172.31.15.247:8081/repository/login/login.zip
+           curl -f -v -u admin:admin123 --upload-file login.zip http://3.238.184.24:8081/repository/login/login.zip
         '''
             }
         }
