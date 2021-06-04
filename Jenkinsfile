@@ -1,9 +1,8 @@
-@Library(todo)
-
-todo(
-    COMPONENT        : 'login',
-    PROJECT_NAME     : 'todo',
-    SLAVE_LABEL      : 'NODEJS'
-    SKIP_NEXUS_UPLOAD : false,
-    APP_TYPE          : 'GO'
+@Library('todoshop') _
+todoshop (
+        COMPONENT             : 'login',
+        PROJECT_NAME          : "todoshop",
+        SLAVE_LABEL           : "GOLANG",
+        SKIP_NEXUS_UPLOAD     : false,
+        APP_TYPE              : "GOLANG"
 )
