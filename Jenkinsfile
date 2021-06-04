@@ -1,5 +1,5 @@
 @Library('todo') _
-todoshop (
+todo (
         COMPONENT             : 'login',
         PROJECT_NAME          : "todo",
         SLAVE_LABEL           : "GOLANG",
