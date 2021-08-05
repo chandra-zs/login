@@ -2,6 +2,5 @@
 
 docker (
          COMPONENT             : 'login',
-         PROJECT_NAME          : "todo",
-         SLAVE_LABEL           : "DOCKER"
+         PROJECT_NAME          : "todo"
 )
