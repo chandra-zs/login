@@ -1,13 +1,8 @@
-FROM golang:alpine as builder
-RUN mkdir /build
-ADD . /build/
-WORKDIR /build
-RUN go build -o main .
-
-FROM alpine
-# RUN adduser -S -D -H -h /app appuser
-# USER appuser
-COPY --from=builder /build/main /app/
-WORKDIR /app
-CMD ["./main"]
-
+FROM    golang:alpine3.14 AS builder
+RUN     mkdir $GOPATH/src/golang
+WORKDIR $GOPATH/src/golang
+copy    . .
+RUN     go mod init
+RUN     go mod tidy
+RUN     go build -o server .
+CMD     [ "./server"]
